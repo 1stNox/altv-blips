@@ -1,6 +1,8 @@
 ## alt:V BlipSystem
 A C# blip system for alt:V using MySQL & PostgreSQL.\
 You can decide if u want to use MySQL or PostgreSQL.\
+Tested using a C# Freeroam gamemode.\
+Feel free to report bugs.\
 \
 WARNING: This is not a standalone resource!
 
