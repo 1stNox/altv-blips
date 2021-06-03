@@ -2,7 +2,7 @@
 A C# blip system for alt:V using MySQL & PostgreSQL.\
 You can decide if u want to use MySQL or PostgreSQL.\
 \
-WARNING: This is not a standalone resource!\
+WARNING: This is not a standalone resource!
 
 # How to use
 This repository includes the source code of a simple blip system.\
