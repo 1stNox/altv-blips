@@ -1,0 +1,9 @@
+{
+  "Type":  "YourType", 
+  "Host": "YourHost",
+  "User": "YourUser",
+  "Password": "YourPassword",
+  "Database": "YourDatabase",
+  "Schema": "YourSchema",
+  "Port": 3306
+}
