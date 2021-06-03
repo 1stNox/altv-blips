@@ -62,13 +62,14 @@ namespace AltV.BlipSystem.Behaviour
             var count = Blips.Count;
             var mod = count % 10;
             var diff = count / 10;
-            if (count != 0)
+            if (mod != 0)
             {
                 for (var i = 0; i < diff; i++)
                 {
                     player.Emit("Blips:Synchronize", JsonSerializer.Serialize(Blips.Skip(i * 10).Take(10)));
                 }
                 player.Emit("Blips:Synchronize", JsonSerializer.Serialize(Blips.TakeLast(mod)));
+                return;
             }
 
             for (var i = 0; i < diff; i++)
