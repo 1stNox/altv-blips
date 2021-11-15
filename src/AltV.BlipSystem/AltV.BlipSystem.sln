@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltV.BlipSystem.Server", "AltV.BlipSystem.Server\AltV.BlipSystem.Server.csproj", "{4A7E281C-43D3-4DFF-AF7A-03E3669A146C}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AltV.BlipSystem.Client", "AltV.BlipSystem.Client\AltV.BlipSystem.Client.njsproj", "{34927A93-20B3-4B04-8B87-2E02C13292F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A7E281C-43D3-4DFF-AF7A-03E3669A146C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7E281C-43D3-4DFF-AF7A-03E3669A146C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7E281C-43D3-4DFF-AF7A-03E3669A146C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7E281C-43D3-4DFF-AF7A-03E3669A146C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34927A93-20B3-4B04-8B87-2E02C13292F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34927A93-20B3-4B04-8B87-2E02C13292F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34927A93-20B3-4B04-8B87-2E02C13292F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34927A93-20B3-4B04-8B87-2E02C13292F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C53A71EA-EF70-4BAA-B924-3B23076369B6}
+	EndGlobalSection
+EndGlobal

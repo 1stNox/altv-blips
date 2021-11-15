@@ -1,12 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>AltV.BlipSystem</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AltV.Net" Version="6.1.21" />
+    <PackageReference Include="AltV.Net.Async" Version="6.1.21" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.0" />

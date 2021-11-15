@@ -1,0 +1,19 @@
+{
+  "name": "alt-v.blip-system.client",
+  "version": "0.0.0",
+  "description": "AltV.BlipSystem.Client",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@altv/types-client": "^1.9.3",
+    "@altv/types-shared": "^1.0.9",
+    "@types/node": "^14.14.7",
+    "typescript": "^4.0.5"
+  }
+}

@@ -1,4 +1,5 @@
-﻿namespace AltV.BlipSystem.Structure
+﻿
+namespace AltV.BlipSystem.Server.Structure
 {
     public class DatabaseConfig
     {
@@ -10,6 +11,6 @@
         public string Schema { get; set; }
         public int Port { get; set; }
 
-        public DatabaseConfig() {}
+        public DatabaseConfig() { }
     }
 }

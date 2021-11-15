@@ -1,6 +1,7 @@
-﻿using AltV.Net.Elements.Entities;
+﻿
+using AltV.Net.Elements.Entities;
 
-namespace AltV.BlipSystem.Behaviour.Services
+namespace AltV.BlipSystem.Server.Behaviour.Services
 {
     public interface IBlipService
     {

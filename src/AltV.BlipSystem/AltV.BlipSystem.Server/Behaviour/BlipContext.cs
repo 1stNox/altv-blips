@@ -1,11 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Text.Json;
-using AltV.BlipSystem.Structure;
+﻿using AltV.BlipSystem.Server.Structure;
 using AltV.Net;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
-namespace AltV.BlipSystem.Behaviour
+namespace AltV.BlipSystem.Server.Behaviour
 {
     public class BlipContext : DbContext
     {
@@ -15,15 +13,15 @@ namespace AltV.BlipSystem.Behaviour
         #endregion
 
         #region Constructors
-        public BlipContext() {}
+        public BlipContext() { }
 
-        public BlipContext(DbContextOptions<BlipContext> options) : base(options) {}
+        public BlipContext(DbContextOptions<BlipContext> options) : base(options) { }
         #endregion
 
         #region Methods
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (optionsBuilder.IsConfigured) 
+            if (optionsBuilder.IsConfigured)
                 return;
 
             DatabaseConfig = GetDatabaseConfig();

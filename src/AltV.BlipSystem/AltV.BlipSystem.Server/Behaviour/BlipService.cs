@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using AltV.BlipSystem.Behaviour.Services;
+﻿using AltV.BlipSystem.Server.Behaviour.Services;
 using AltV.Net;
 using AltV.Net.Elements.Entities;
 using MySqlConnector;
 using Npgsql;
-using Blip = AltV.BlipSystem.Structure.Blip;
+using System.Text.Json;
 
-namespace AltV.BlipSystem.Behaviour
+namespace AltV.BlipSystem.Server.Behaviour
 {
     public class BlipService : IBlipService
     {
         #region Fields
 
-        private List<Blip> Blips { get; set; }
+        private List<Structure.Blip> Blips { get; set; }
         private bool Initialized { get; set; }
 
         #endregion
@@ -37,7 +33,7 @@ namespace AltV.BlipSystem.Behaviour
             {
                 using (var db = new BlipContext())
                 {
-                    Blips = new List<Blip>(db.Blips);
+                    Blips = new List<Structure.Blip>(db.Blips);
                 }
 
                 Initialized = true;

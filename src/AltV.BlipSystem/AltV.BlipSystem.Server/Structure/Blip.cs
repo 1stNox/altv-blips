@@ -1,6 +1,5 @@
-﻿using System.Numerics;
-
-namespace AltV.BlipSystem.Structure
+﻿
+namespace AltV.BlipSystem.Server.Structure
 {
     public class Blip
     {
@@ -14,6 +13,6 @@ namespace AltV.BlipSystem.Structure
         public float Scale { get; set; }
         public bool ShortRange { get; set; }
 
-        public Blip() {}
+        public Blip() { }
     }
 }
