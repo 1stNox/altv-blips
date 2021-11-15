@@ -18,10 +18,10 @@ jobs:
       with:
         node-version: 14.x
     - name: Install modules
-      working-directory: .src/AltV.BlipSystem/AltV.BlipSystem.Client
+      working-directory: ./src/AltV.BlipSystem/AltV.BlipSystem.Client
       run: npm i
     - name: Build Client files
-      working-directory: .src/AltV.BlipSystem/AltV.BlipSystem.Client
+      working-directory: ./src/AltV.BlipSystem/AltV.BlipSystem.Client
       run: npm run build
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
