@@ -13,13 +13,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Setup NodeJS
+      uses: actions/setup-nodejs@v2
+      with:
+        node-version: 14.x
+    - name: Install modules
+      working-directory: .src/AltV.BlipSystem/AltV.BlipSystem.Client
+      run: npm i
+    - name: Build Client files
+      working-directory: .src/AltV.BlipSystem/AltV.BlipSystem.Client
+      run: npm run build
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
-      working-directory: ./src/AltV.BlipSystem.Server
+      working-directory: ./src/AltV.BlipSystem/AltV.BlipSystem.Server
       run: dotnet restore
     - name: Build
-      working-directory: ./src/AltV.BlipSystem.Server
+      working-directory: ./src/AltV.BlipSystem/AltV.BlipSystem.Server
       run: dotnet build --no-restore
