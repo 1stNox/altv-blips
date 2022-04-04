@@ -1,3 +1,5 @@
+# OUTDATED - UPDATE NUGETS
+
 ## alt:V BlipSystem
 A C# blip system for alt:V using MySQL & PostgreSQL.\
 You can decide if u want to use MySQL or PostgreSQL.\
@@ -6,7 +8,7 @@ Feel free to report bugs.\
 \
 WARNING: This is not a standalone resource!
 
-# How to use
+## How to use
 This repository includes the source code of a simple blip system.\
 \
 Just add the project as dependecy to yours and create a BlipService object.\
